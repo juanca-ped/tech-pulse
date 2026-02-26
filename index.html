@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Pulse â Your Daily Tech News Dashboard</title>
+    <title>Tech Pulse — Your Daily Tech News Dashboard</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -744,7 +744,7 @@
     <!-- Header -->
     <header class="header">
         <div class="logo">
-            <div class="logo-icon">â¡</div>
+            <div class="logo-icon">⚡</div>
             <div>
                 <div class="logo-text">Tech Pulse</div>
                 <div class="logo-subtitle">Your personalized tech news feed</div>
@@ -754,7 +754,7 @@
             <span class="last-updated" id="lastUpdated">Not yet refreshed</span>
             <button class="refresh-btn" id="refreshBtn" onclick="fetchNews()">
                 <span class="spinner"></span>
-                <span class="btn-text">ð Fetch Latest News</span>
+                <span class="btn-text">🔄 Fetch Latest News</span>
             </button>
         </div>
     </header>
@@ -800,7 +800,7 @@
             <optgroup label="Advertising & Marketing">
                 <option value="advertising marketing">ð¢ Advertising & Marketing</option>
                 <option value="brand marketing">ð·ï¸ Brand Marketing</option>
-                <option value="digital advertising adtech">ð Digital Ads / AdTech</option>
+                <option value="digital advertising adtech">📊 Digital Ads / AdTech</option>
                 <option value="influencer creator economy">ð¤ Influencer / Creator Economy</option>
             </optgroup>
             <optgroup label="Television & Streaming">
@@ -818,7 +818,7 @@
                 <option value="quantum computing">âï¸ Quantum Computing</option>
                 <option value="biotech health tech">ð§¬ Biotech / Health Tech</option>
                 <option value="AR VR metaverse">ð¥½ AR / VR / Metaverse</option>
-                <option value="blockchain web3">ð Blockchain / Web3</option>
+                <option value="blockchain web3">🔗 Blockchain / Web3</option>
             </optgroup>
         </select>
 
@@ -889,7 +889,7 @@
                 <div class="char-count" id="charCount">0 / 280</div>
             </div>
             <div class="modal-actions">
-                <button class="modal-btn secondary" onclick="copyPost()">ð Copy to Clipboard</button>
+                <button class="modal-btn secondary" onclick="copyPost()">📋 Copy to Clipboard</button>
                 <button class="modal-btn primary" onclick="openPlatform()">ð Open & Paste</button>
             </div>
         </div>
@@ -911,17 +911,17 @@
             { name: 'ZDNet', slug: 'zdnet', rss: 'https://www.zdnet.com/news/rss.xml', color: '#e6342d', url: 'https://www.zdnet.com' },
             { name: 'Axios', slug: 'axios', rss: 'https://api.axios.com/feed/top', color: '#29aae1', url: 'https://www.axios.com' },
             { name: 'Google News Tech', slug: 'googlenews', rss: 'https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US:en', color: '#4285f4', url: 'https://news.google.com' },
-            // â Advertising & Marketing â
+            // — Advertising & Marketing —
             { name: 'Adweek', slug: 'adweek', rss: 'https://www.adweek.com/feed/', color: '#e4002b', url: 'https://www.adweek.com' },
             { name: 'Ad Age', slug: 'adage', rss: 'https://adage.com/rss-feed', color: '#ff5a00', url: 'https://adage.com' },
             { name: 'Marketing Dive', slug: 'marketingdive', rss: 'https://www.marketingdive.com/feeds/news/', color: '#1a73e8', url: 'https://www.marketingdive.com' },
             { name: 'Digiday', slug: 'digiday', rss: 'https://digiday.com/feed/', color: '#000000', url: 'https://digiday.com' },
-            // â Television & Streaming â
+            // — Television & Streaming —
             { name: 'Variety', slug: 'variety', rss: 'https://variety.com/feed/', color: '#e71d36', url: 'https://variety.com' },
             { name: 'Deadline', slug: 'deadline', rss: 'https://deadline.com/feed/', color: '#c41230', url: 'https://deadline.com' },
             { name: 'Hollywood Reporter', slug: 'hollywoodreporter', rss: 'https://www.hollywoodreporter.com/c/tv/feed/', color: '#0d0d0d', url: 'https://www.hollywoodreporter.com' },
             { name: 'TVRev', slug: 'tvrev', rss: 'https://www.tvrev.com/feed/', color: '#6b21a8', url: 'https://www.tvrev.com' },
-            // â AI-Specific Blogs â
+            // — AI-Specific Blogs —
             { name: 'The Neuron', slug: 'theneuron', rss: 'https://www.theneurondaily.com/feed', color: '#facc15', url: 'https://www.theneurondaily.com' },
             { name: 'OpenAI Blog', slug: 'openai', rss: 'https://openai.com/blog/rss.xml', color: '#10a37f', url: 'https://openai.com/blog' },
             { name: 'MIT Tech Review AI', slug: 'mittechreview', rss: 'https://www.technologyreview.com/feed/', color: '#9b1deb', url: 'https://www.technologyreview.com' },
@@ -1018,7 +1018,7 @@
                     let s = `Here's the deal: ${source} is reporting on "${title}."`;
                     if (detail1) s += ` ${detail1}`;
                     if (detail2) s += ` ${detail2}`;
-                    s += ` Worth keeping an eye on â this one could have ripple effects across the industry.`;
+                    s += ` Worth keeping an eye on — this one could have ripple effects across the industry.`;
                     return s;
                 },
                 () => {
@@ -1037,7 +1037,7 @@
                     return s;
                 },
                 () => {
-                    let s = `Interesting one from ${source} â "${title}."`;
+                    let s = `Interesting one from ${source} — "${title}."`;
                     if (detail1) s += ` ${detail1}`;
                     s += detail2 ? ` ${detail2}` : ` The implications here go beyond the headline, so it's worth digging into the full story.`;
                     s += ` Keep this on your radar.`;
@@ -1061,7 +1061,7 @@
                     let s = `Esto es lo importante: ${source} estÃ¡ reportando sobre "${title}."`;
                     if (detail1) s += ` ${detail1}`;
                     if (detail2) s += ` ${detail2}`;
-                    s += ` Vale la pena seguirle la pista â podrÃ­a tener un efecto dominÃ³ en toda la industria.`;
+                    s += ` Vale la pena seguirle la pista — podrÃ­a tener un efecto dominÃ³ en toda la industria.`;
                     return s;
                 },
                 () => {
@@ -1080,7 +1080,7 @@
                     return s;
                 },
                 () => {
-                    let s = `Una nota interesante de ${source} â "${title}."`;
+                    let s = `Una nota interesante de ${source} — "${title}."`;
                     if (detail1) s += ` ${detail1}`;
                     s += detail2 ? ` ${detail2}` : ` Las implicaciones van mÃ¡s allÃ¡ del titular, asÃ­ que vale la pena leer la historia completa.`;
                     s += ` Tenlo en el radar.`;
@@ -1502,7 +1502,7 @@
             });
         }
 
-        // Social Post Modal â now uses index
+        // Social Post Modal — now uses index
         function openShareModal(index, platform) {
             currentArticle = displayedArticles[index];
             currentPlatform = platform;
@@ -1543,7 +1543,7 @@
                     `Worth reading: ${a.title}\n\n${a.link}`,
                     `${a.title}\n\nThoughts?\n\n${a.link}`,
                     `This is a big one: ${a.title}\n\n${a.link}`,
-                    `Interesting development â ${a.title}\n\n${a.summary ? a.summary.substring(0, 80) + '...' : ''}\n\n${a.link}`
+                    `Interesting development — ${a.title}\n\n${a.summary ? a.summary.substring(0, 80) + '...' : ''}\n\n${a.link}`
                 ];
                 post = templates[Math.floor(Math.random() * templates.length)];
             }
