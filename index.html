@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Pulse — Your Daily Tech News Dashboard</title>
+    <title>Tech Pulse â Your Daily Tech News Dashboard</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -744,7 +744,7 @@
     <!-- Header -->
     <header class="header">
         <div class="logo">
-            <div class="logo-icon">⚡</div>
+            <div class="logo-icon">â¡</div>
             <div>
                 <div class="logo-text">Tech Pulse</div>
                 <div class="logo-subtitle">Your personalized tech news feed</div>
@@ -754,7 +754,7 @@
             <span class="last-updated" id="lastUpdated">Not yet refreshed</span>
             <button class="refresh-btn" id="refreshBtn" onclick="fetchNews()">
                 <span class="spinner"></span>
-                <span class="btn-text">🔄 Fetch Latest News</span>
+                <span class="btn-text">ð Fetch Latest News</span>
             </button>
         </div>
     </header>
@@ -763,62 +763,62 @@
     <div class="topic-bar">
         <span class="bar-label">Topic:</span>
         <select class="topic-select" id="topicSelect" onchange="onTopicChange()">
-            <option value="all">🌐 All Technology</option>
+            <option value="all">ð All Technology</option>
             <optgroup label="Core Tech">
-                <option value="artificial intelligence">🤖 Artificial Intelligence</option>
-                <option value="machine learning">🧠 Machine Learning</option>
-                <option value="generative AI">✨ Generative AI</option>
-                <option value="robotics">🦾 Robotics</option>
+                <option value="artificial intelligence">ð¤ Artificial Intelligence</option>
+                <option value="machine learning">ð§  Machine Learning</option>
+                <option value="generative AI">â¨ Generative AI</option>
+                <option value="robotics">ð¦¾ Robotics</option>
             </optgroup>
             <optgroup label="Devices & Platforms">
-                <option value="mobile">📱 Mobile / Smartphones</option>
-                <option value="apple">🍎 Apple</option>
-                <option value="android google">🤖 Android / Google</option>
-                <option value="wearables">⌚ Wearables</option>
-                <option value="gaming">🎮 Gaming</option>
-                <option value="electric vehicles">🚗 Electric Vehicles</option>
+                <option value="mobile">ð± Mobile / Smartphones</option>
+                <option value="apple">ð Apple</option>
+                <option value="android google">ð¤ Android / Google</option>
+                <option value="wearables">â Wearables</option>
+                <option value="gaming">ð® Gaming</option>
+                <option value="electric vehicles">ð Electric Vehicles</option>
             </optgroup>
             <optgroup label="Software & Cloud">
-                <option value="cloud computing">☁️ Cloud Computing</option>
-                <option value="SaaS software">💻 SaaS / Software</option>
-                <option value="programming developer">👨‍💻 Programming / Dev Tools</option>
-                <option value="open source">📦 Open Source</option>
+                <option value="cloud computing">âï¸ Cloud Computing</option>
+                <option value="SaaS software">ð» SaaS / Software</option>
+                <option value="programming developer">ð¨âð» Programming / Dev Tools</option>
+                <option value="open source">ð¦ Open Source</option>
             </optgroup>
             <optgroup label="Internet & Social">
-                <option value="social media">📣 Social Media</option>
-                <option value="streaming media">📺 Streaming / Media</option>
-                <option value="ecommerce">🛒 E-Commerce</option>
-                <option value="fintech cryptocurrency">💰 Fintech / Crypto</option>
+                <option value="social media">ð£ Social Media</option>
+                <option value="streaming media">ðº Streaming / Media</option>
+                <option value="ecommerce">ð E-Commerce</option>
+                <option value="fintech cryptocurrency">ð° Fintech / Crypto</option>
             </optgroup>
             <optgroup label="Enterprise & Industry">
-                <option value="cybersecurity">🔒 Cybersecurity</option>
-                <option value="data privacy">🛡️ Data Privacy</option>
-                <option value="semiconductors chips">🔬 Semiconductors / Chips</option>
-                <option value="startups venture capital">🚀 Startups / VC</option>
-                <option value="big tech FAANG">🏢 Big Tech (FAANG)</option>
+                <option value="cybersecurity">ð Cybersecurity</option>
+                <option value="data privacy">ð¡ï¸ Data Privacy</option>
+                <option value="semiconductors chips">ð¬ Semiconductors / Chips</option>
+                <option value="startups venture capital">ð Startups / VC</option>
+                <option value="big tech FAANG">ð¢ Big Tech (FAANG)</option>
             </optgroup>
             <optgroup label="Advertising & Marketing">
-                <option value="advertising marketing">📢 Advertising & Marketing</option>
-                <option value="brand marketing">🏷️ Brand Marketing</option>
-                <option value="digital advertising adtech">📊 Digital Ads / AdTech</option>
-                <option value="influencer creator economy">🎤 Influencer / Creator Economy</option>
+                <option value="advertising marketing">ð¢ Advertising & Marketing</option>
+                <option value="brand marketing">ð·ï¸ Brand Marketing</option>
+                <option value="digital advertising adtech">ð Digital Ads / AdTech</option>
+                <option value="influencer creator economy">ð¤ Influencer / Creator Economy</option>
             </optgroup>
             <optgroup label="Television & Streaming">
-                <option value="television streaming">📺 Television & Streaming</option>
-                <option value="streaming wars">⚔️ Streaming Wars</option>
-                <option value="connected TV advertising">📡 Connected TV / CTV Ads</option>
+                <option value="television streaming">ðº Television & Streaming</option>
+                <option value="streaming wars">âï¸ Streaming Wars</option>
+                <option value="connected TV advertising">ð¡ Connected TV / CTV Ads</option>
             </optgroup>
             <optgroup label="AI Deep Dive">
-                <option value="AI blogs research">🔬 AI Blogs & Research</option>
-                <option value="AI startups tools">🛠️ AI Startups & Tools</option>
-                <option value="AI regulation policy">⚖️ AI Regulation & Policy</option>
+                <option value="AI blogs research">ð¬ AI Blogs & Research</option>
+                <option value="AI startups tools">ð ï¸ AI Startups & Tools</option>
+                <option value="AI regulation policy">âï¸ AI Regulation & Policy</option>
             </optgroup>
             <optgroup label="Frontier Tech">
-                <option value="space technology">🚀 Space Tech</option>
-                <option value="quantum computing">⚛️ Quantum Computing</option>
-                <option value="biotech health tech">🧬 Biotech / Health Tech</option>
-                <option value="AR VR metaverse">🥽 AR / VR / Metaverse</option>
-                <option value="blockchain web3">🔗 Blockchain / Web3</option>
+                <option value="space technology">ð Space Tech</option>
+                <option value="quantum computing">âï¸ Quantum Computing</option>
+                <option value="biotech health tech">ð§¬ Biotech / Health Tech</option>
+                <option value="AR VR metaverse">ð¥½ AR / VR / Metaverse</option>
+                <option value="blockchain web3">ð Blockchain / Web3</option>
             </optgroup>
         </select>
 
@@ -858,14 +858,14 @@
                 <span class="stat-label">Sources</span>
             </div>
             <div class="active-topic-badge" id="topicBadge" style="display:none;">
-                <span class="topic-icon" id="topicBadgeIcon">🌐</span>
+                <span class="topic-icon" id="topicBadgeIcon">ð</span>
                 <span id="topicBadgeText">All Technology</span>
             </div>
         </div>
 
         <div id="newsContainer">
             <div class="empty-state">
-                <div class="icon">📡</div>
+                <div class="icon">ð¡</div>
                 <h2 style="margin-bottom:8px; color:var(--text-primary);">Ready to fetch the latest tech news</h2>
                 <p>Choose a <strong>topic</strong> from the dropdown above, then click <strong>"Fetch Latest News"</strong>.</p>
             </div>
@@ -877,7 +877,7 @@
         <div class="modal">
             <div class="modal-header">
                 <span class="modal-title">Generate Social Post</span>
-                <button class="modal-close" onclick="closeModal()">✕</button>
+                <button class="modal-close" onclick="closeModal()">â</button>
             </div>
             <div class="modal-tabs">
                 <button class="modal-tab active" data-platform="linkedin" onclick="switchTab('linkedin', this)">LinkedIn</button>
@@ -889,8 +889,8 @@
                 <div class="char-count" id="charCount">0 / 280</div>
             </div>
             <div class="modal-actions">
-                <button class="modal-btn secondary" onclick="copyPost()">📋 Copy to Clipboard</button>
-                <button class="modal-btn primary" onclick="openPlatform()">🚀 Open & Paste</button>
+                <button class="modal-btn secondary" onclick="copyPost()">ð Copy to Clipboard</button>
+                <button class="modal-btn primary" onclick="openPlatform()">ð Open & Paste</button>
             </div>
         </div>
     </div>
@@ -911,17 +911,17 @@
             { name: 'ZDNet', slug: 'zdnet', rss: 'https://www.zdnet.com/news/rss.xml', color: '#e6342d', url: 'https://www.zdnet.com' },
             { name: 'Axios', slug: 'axios', rss: 'https://api.axios.com/feed/top', color: '#29aae1', url: 'https://www.axios.com' },
             { name: 'Google News Tech', slug: 'googlenews', rss: 'https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US:en', color: '#4285f4', url: 'https://news.google.com' },
-            // — Advertising & Marketing —
+            // â Advertising & Marketing â
             { name: 'Adweek', slug: 'adweek', rss: 'https://www.adweek.com/feed/', color: '#e4002b', url: 'https://www.adweek.com' },
             { name: 'Ad Age', slug: 'adage', rss: 'https://adage.com/rss-feed', color: '#ff5a00', url: 'https://adage.com' },
             { name: 'Marketing Dive', slug: 'marketingdive', rss: 'https://www.marketingdive.com/feeds/news/', color: '#1a73e8', url: 'https://www.marketingdive.com' },
             { name: 'Digiday', slug: 'digiday', rss: 'https://digiday.com/feed/', color: '#000000', url: 'https://digiday.com' },
-            // — Television & Streaming —
+            // â Television & Streaming â
             { name: 'Variety', slug: 'variety', rss: 'https://variety.com/feed/', color: '#e71d36', url: 'https://variety.com' },
             { name: 'Deadline', slug: 'deadline', rss: 'https://deadline.com/feed/', color: '#c41230', url: 'https://deadline.com' },
             { name: 'Hollywood Reporter', slug: 'hollywoodreporter', rss: 'https://www.hollywoodreporter.com/c/tv/feed/', color: '#0d0d0d', url: 'https://www.hollywoodreporter.com' },
             { name: 'TVRev', slug: 'tvrev', rss: 'https://www.tvrev.com/feed/', color: '#6b21a8', url: 'https://www.tvrev.com' },
-            // — AI-Specific Blogs —
+            // â AI-Specific Blogs â
             { name: 'The Neuron', slug: 'theneuron', rss: 'https://www.theneurondaily.com/feed', color: '#facc15', url: 'https://www.theneurondaily.com' },
             { name: 'OpenAI Blog', slug: 'openai', rss: 'https://openai.com/blog/rss.xml', color: '#10a37f', url: 'https://openai.com/blog' },
             { name: 'MIT Tech Review AI', slug: 'mittechreview', rss: 'https://www.technologyreview.com/feed/', color: '#9b1deb', url: 'https://www.technologyreview.com' },
@@ -971,7 +971,7 @@
             'AR VR metaverse': ['ar', 'vr', 'metaverse', 'augmented reality', 'virtual reality', 'mixed reality', 'headset', 'vision pro', 'quest', 'spatial'],
             'blockchain web3': ['blockchain', 'web3', 'decentralized', 'smart contract', 'dao', 'token', 'nft', 'defi', 'ethereum'],
             // Advertising & Marketing
-            'advertising marketing': ['advertising', 'marketing', 'ad', 'campaign', 'brand', 'agency', 'cmо', 'programmatic', 'media buy', 'creative', 'adweek', 'ad age', 'digiday', 'adtech'],
+            'advertising marketing': ['advertising', 'marketing', 'ad', 'campaign', 'brand', 'agency', 'cmÐ¾', 'programmatic', 'media buy', 'creative', 'adweek', 'ad age', 'digiday', 'adtech'],
             'brand marketing': ['brand', 'branding', 'campaign', 'awareness', 'loyalty', 'positioning', 'rebrand', 'sponsor', 'partnership', 'endorsement'],
             'digital advertising adtech': ['adtech', 'programmatic', 'display', 'retarget', 'cpm', 'cpc', 'dsp', 'ssp', 'ad exchange', 'ad network', 'google ads', 'meta ads', 'digital advertising'],
             'influencer creator economy': ['influencer', 'creator', 'creator economy', 'youtube', 'tiktok', 'instagram', 'sponsorship', 'brand deal', 'content creator', 'ugc', 'monetiz'],
@@ -1018,7 +1018,7 @@
                     let s = `Here's the deal: ${source} is reporting on "${title}."`;
                     if (detail1) s += ` ${detail1}`;
                     if (detail2) s += ` ${detail2}`;
-                    s += ` Worth keeping an eye on — this one could have ripple effects across the industry.`;
+                    s += ` Worth keeping an eye on â this one could have ripple effects across the industry.`;
                     return s;
                 },
                 () => {
@@ -1037,7 +1037,7 @@
                     return s;
                 },
                 () => {
-                    let s = `Interesting one from ${source} — "${title}."`;
+                    let s = `Interesting one from ${source} â "${title}."`;
                     if (detail1) s += ` ${detail1}`;
                     s += detail2 ? ` ${detail2}` : ` The implications here go beyond the headline, so it's worth digging into the full story.`;
                     s += ` Keep this on your radar.`;
@@ -1058,36 +1058,36 @@
         function buildSummaryES(title, source, detail1, detail2) {
             const templates = [
                 () => {
-                    let s = `Esto es lo importante: ${source} está reportando sobre "${title}."`;
+                    let s = `Esto es lo importante: ${source} estÃ¡ reportando sobre "${title}."`;
                     if (detail1) s += ` ${detail1}`;
                     if (detail2) s += ` ${detail2}`;
-                    s += ` Vale la pena seguirle la pista — podría tener un efecto dominó en toda la industria.`;
+                    s += ` Vale la pena seguirle la pista â podrÃ­a tener un efecto dominÃ³ en toda la industria.`;
                     return s;
                 },
                 () => {
-                    let s = `${source} acaba de publicar una nota sobre "${title}" y está generando atención.`;
+                    let s = `${source} acaba de publicar una nota sobre "${title}" y estÃ¡ generando atenciÃ³n.`;
                     if (detail1) s += ` ${detail1}`;
                     if (detail2) s += ` ${detail2}`;
-                    else s += ` La historia toca algunos cambios clave que están ocurriendo en el panorama tecnológico.`;
-                    s += ` Lectura recomendada si quieres mantenerte al día.`;
+                    else s += ` La historia toca algunos cambios clave que estÃ¡n ocurriendo en el panorama tecnolÃ³gico.`;
+                    s += ` Lectura recomendada si quieres mantenerte al dÃ­a.`;
                     return s;
                 },
                 () => {
-                    let s = `Noticia importante: "${title}" está circulando con fuerza.`;
-                    if (detail1) s += ` Según ${source}, ${detail1.charAt(0).toLowerCase() + detail1.slice(1)}`;
+                    let s = `Noticia importante: "${title}" estÃ¡ circulando con fuerza.`;
+                    if (detail1) s += ` SegÃºn ${source}, ${detail1.charAt(0).toLowerCase() + detail1.slice(1)}`;
                     if (detail2) s += ` ${detail2}`;
-                    s += ` Este es el tipo de desarrollo que marca hacia dónde va la industria.`;
+                    s += ` Este es el tipo de desarrollo que marca hacia dÃ³nde va la industria.`;
                     return s;
                 },
                 () => {
-                    let s = `Una nota interesante de ${source} — "${title}."`;
+                    let s = `Una nota interesante de ${source} â "${title}."`;
                     if (detail1) s += ` ${detail1}`;
-                    s += detail2 ? ` ${detail2}` : ` Las implicaciones van más allá del titular, así que vale la pena leer la historia completa.`;
+                    s += detail2 ? ` ${detail2}` : ` Las implicaciones van mÃ¡s allÃ¡ del titular, asÃ­ que vale la pena leer la historia completa.`;
                     s += ` Tenlo en el radar.`;
                     return s;
                 },
                 () => {
-                    let s = `${source} está cubriendo "${title}" y esto es por qué importa.`;
+                    let s = `${source} estÃ¡ cubriendo "${title}" y esto es por quÃ© importa.`;
                     if (detail1) s += ` ${detail1}`;
                     if (detail2) s += ` ${detail2}`;
                     s += ` Si sigues el mundo tech, esta noticia no te la puedes perder.`;
@@ -1200,7 +1200,7 @@
             el.classList.add('active');
             // Re-render to update existing summaries
             if (displayedArticles.length > 0) renderNews();
-            showToast(lang === 'en' ? 'Language: English' : 'Idioma: Español');
+            showToast(lang === 'en' ? 'Language: English' : 'Idioma: EspaÃ±ol');
         }
 
         // Topic change
@@ -1226,7 +1226,7 @@
                 const container = document.getElementById('newsContainer');
                 container.innerHTML = `
                     <div class="empty-state">
-                        <div class="icon">⚠️</div>
+                        <div class="icon">â ï¸</div>
                         <h2 style="margin-bottom:8px; color:var(--text-primary);">No sources selected</h2>
                         <p>Open the <strong>Sources</strong> dropdown above and check at least one source to fetch from.</p>
                     </div>`;
@@ -1307,7 +1307,7 @@
             btn.classList.remove('loading');
             btn.disabled = false;
             document.getElementById('lastUpdated').textContent =
-                `Updated: ${new Date().toLocaleString('en-US', {hour: '2-digit', minute: '2-digit', timeZone: 'America/Puerto_Rico'})} AST`;
+                `Updated: ${new Date().toLocaleString('en-US', {hour: 'numeric', minute: '2-digit', hour12: true, timeZone: 'America/New_York', timeZoneName: 'short'})}`;
         }
 
         // Parse RSS XML manually as fallback
@@ -1376,7 +1376,7 @@
             if (filtered.length === 0) {
                 container.innerHTML = `
                     <div class="empty-state">
-                        <div class="icon">🔍</div>
+                        <div class="icon">ð</div>
                         <h2 style="margin-bottom:8px; color:var(--text-primary);">No articles found for this topic</h2>
                         <p>Try selecting "All Technology" or a broader topic, then fetch again.</p>
                     </div>
@@ -1395,7 +1395,7 @@
                         <div class="card-content">
                             <div class="card-source-row">
                                 <span class="source-badge" style="background:${article.color}22; color:${article.color}">${article.source}</span>
-                                <span class="card-time"><span class="pub-date">${formatPubDate(article.pubDate)}</span><span class="time-sep">·</span>${timeAgo(article.pubDate)}</span>
+                                <span class="card-time"><span class="pub-date">${formatPubDate(article.pubDate)}</span><span class="time-sep">Â·</span>${timeAgo(article.pubDate)}</span>
                             </div>
                             <div class="card-headline">
                                 <a href="${article.link}" target="_blank" rel="noopener">${article.title}</a>
@@ -1446,14 +1446,14 @@
             setTimeout(() => {
                 const summary = buildSmartSummary(article, currentLanguage);
 
-                const langLabel = currentLanguage === 'es' ? 'Resumen rápido' : 'Quick Summary';
+                const langLabel = currentLanguage === 'es' ? 'Resumen rÃ¡pido' : 'Quick Summary';
                 const closeBtnTitle = currentLanguage === 'es' ? 'Cerrar' : 'Close';
 
                 panel.innerHTML = `
                     <div class="card-ai-summary">
                         <div class="summary-header">
                             <span class="summary-label">${langLabel}</span>
-                            <button class="summary-close" title="${closeBtnTitle}" onclick="document.getElementById('summary-panel-${index}').innerHTML=''">✕</button>
+                            <button class="summary-close" title="${closeBtnTitle}" onclick="document.getElementById('summary-panel-${index}').innerHTML=''">â</button>
                         </div>
                         <div class="summary-text">${summary}</div>
                     </div>
@@ -1476,7 +1476,7 @@
                 badge.style.display = 'flex';
                 document.getElementById('topicBadgeText').textContent = topicLabel || currentTopic;
                 const opt = document.getElementById('topicSelect').selectedOptions[0];
-                const emoji = opt ? opt.textContent.trim().split(' ')[0] : '🔍';
+                const emoji = opt ? opt.textContent.trim().split(' ')[0] : 'ð';
                 document.getElementById('topicBadgeIcon').textContent = emoji;
             } else {
                 badge.style.display = 'none';
@@ -1494,20 +1494,15 @@
 
         function formatPubDate(date) {
             if (!date || isNaN(date)) return '';
-            // Convert to Atlantic Standard Time (AST = UTC-4)
-            const ast = new Date(date.getTime() + (date.getTimezoneOffset() * 60000) - (4 * 3600000));
-            const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-            const m = months[ast.getMonth()];
-            const d = ast.getDate();
-            const y = ast.getFullYear();
-            let h = ast.getHours();
-            const min = ast.getMinutes().toString().padStart(2, '0');
-            const ampm = h >= 12 ? 'PM' : 'AM';
-            h = h % 12 || 12;
-            return `${m} ${d}, ${y} at ${h}:${min} ${ampm} AST`;
+            // Convert to Eastern Time (America/New_York — auto EST/EDT)
+            return date.toLocaleString('en-US', {
+                month: 'short', day: 'numeric', year: 'numeric',
+                hour: 'numeric', minute: '2-digit', hour12: true,
+                timeZone: 'America/New_York', timeZoneName: 'short'
+            });
         }
 
-        // Social Post Modal — now uses index
+        // Social Post Modal â now uses index
         function openShareModal(index, platform) {
             currentArticle = displayedArticles[index];
             currentPlatform = platform;
@@ -1548,7 +1543,7 @@
                     `Worth reading: ${a.title}\n\n${a.link}`,
                     `${a.title}\n\nThoughts?\n\n${a.link}`,
                     `This is a big one: ${a.title}\n\n${a.link}`,
-                    `Interesting development — ${a.title}\n\n${a.summary ? a.summary.substring(0, 80) + '...' : ''}\n\n${a.link}`
+                    `Interesting development â ${a.title}\n\n${a.summary ? a.summary.substring(0, 80) + '...' : ''}\n\n${a.link}`
                 ];
                 post = templates[Math.floor(Math.random() * templates.length)];
             }
